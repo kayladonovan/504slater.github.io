@@ -1,0 +1,11 @@
+body {
+  font: 16px Arial,sans-serif;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+header {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #354357;
+}
