@@ -1,7 +1,7 @@
-let people = ["Kayla", "Sawyer"];
-let evenWeekList = ["BigLaundry", "Vacuum", "Garbage", "Bathroom", "Kitchen"];
-let oddWeekList = ["RegLaundry", "Vacuum", "Garbage"];
-let currWeekSchedule = [[], [], [], [], [], [], []];
+var people = ["Kayla", "Sawyer"];
+var evenWeekList = ["BigLaundry", "Vacuum", "Garbage", "Bathroom", "Kitchen"];
+var oddWeekList = ["RegLaundry", "Vacuum", "Garbage"];
+var currWeekSchedule = [[], [], [], []];
 
 // Determines whether the current week is even (use evenWeekList) or odd (use oddWeekList)
 function isEvenWeek()
@@ -33,8 +33,12 @@ function getGroceryDate()
 function assignDishesTask()
 {
     var num = Math.floor(Math.random() * 2);
-    //console.log(people[num] + " got dishes!");
     return num;
+}
+
+function clearSchedule()
+{
+    currWeekSchedule = [[], [], [], []];
 }
 
 function main()
@@ -54,9 +58,6 @@ function main()
     return currWeekSchedule;
 }
 
-main();
+//main();
 console.log(currWeekSchedule);
-
-//var groceryDateNum = getGroceryDate();
-//isEvenWeek();
-//assignDishesTask();
+console.log("========================");
